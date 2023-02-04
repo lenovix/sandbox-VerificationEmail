@@ -11,9 +11,10 @@
 
 <body>
     <form class="login" action="" method="POST">
-        <input type="text" name="name" placeholder="Name">
-        <input type="email" name="email" placeholder="Email">
-        <input type="password" name="password" placeholder="password">
+        @csrf
+        <input type="text" name="name" placeholder="Name"><br>
+        <input type="email" name="email" placeholder="Email"><br>
+        <input type="password" name="password" placeholder="password"><br>
         <button>Register</button>
     </form>
 </body>
