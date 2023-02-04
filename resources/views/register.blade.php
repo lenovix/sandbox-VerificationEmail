@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <form class="login" action="" method="POST">
+    <form class="register" action="" method="POST">
         @csrf
         <input type="text" name="name" placeholder="Name"><br>
         <input type="email" name="email" placeholder="Email"><br>

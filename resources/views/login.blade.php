@@ -11,6 +11,7 @@
 
 <body>
     <form class="login" action="" method="POST">
+        @csrf
         <input type="email" name="email" placeholder="Email">
         <input type="password" name="password" placeholder="password">
         <button>Login</button>

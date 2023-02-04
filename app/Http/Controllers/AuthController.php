@@ -28,13 +28,14 @@ class AuthController extends Controller
             'password' => 'required',
         ]);
 
-        return $request;
+        // return $request;
 
         $user = User::create($request->except(['_token']));
 
         event(new Registered($user));
 
         auth()->login($user);
+
         return redirect()->route('verification.notice')->with('success', 'Akun berhasil dibuat, silahkan verifikasi email anda');
     }
 }
